@@ -1,5 +1,6 @@
 import QtQuick
-import QtQuick.Controls.Templates
+import QtQuick.Controls
+import QtQuick.Templates
 
 Item {
     id: root
@@ -32,8 +33,8 @@ Item {
                     height: 70
                     contentItem: Image {
                         source: btnVTPlus.pressed ?
-                            Qul.image("qrc:///images/btn-add-down.png") :
-                            Qul.image("qrc:///images/btn-add-normal.png")
+                            "qrc:///images/btn-add-down.png" :
+                            "qrc:///images/btn-add-normal.png"
 
                     }
                     onClicked: root.vt++;
@@ -71,8 +72,8 @@ Item {
                     height: 70
                     contentItem: Image {
                         source: btnVTMinus.pressed ?
-                            Qul.image("qrc:///images/btn-remove-down.png") :
-                            Qul.image("qrc:///images/btn-remove-normal.png")
+                            "qrc:///images/btn-remove-down.png" :
+                            "qrc:///images/btn-remove-normal.png"
 
                     }
                     onClicked: root.vt--;
@@ -93,8 +94,8 @@ Item {
                     height: 70
                     contentItem: Image {
                         source: peepPlus.pressed ?
-                            Qul.image("qrc:///images/btn-add-down.png") :
-                            Qul.image("qrc:///images/btn-add-normal.png")
+                            "qrc:///images/btn-add-down.png" :
+                            "qrc:///images/btn-add-normal.png"
 
                     }
                     onClicked: root.peep++;
@@ -132,8 +133,8 @@ Item {
                     height: 70
                     contentItem: Image {
                         source: peepMinus.pressed ?
-                            Qul.image("qrc:///images/btn-remove-down.png") :
-                            Qul.image("qrc:///images/btn-remove-normal.png")
+                            "qrc:///images/btn-remove-down.png" :
+                            "qrc:///images/btn-remove-normal.png"
 
                     }
                     onClicked: root.peep--;
@@ -153,8 +154,8 @@ Item {
                     height: 70
                     contentItem: Image {
                         source: btnOxyPlus.pressed ?
-                            Qul.image("qrc:///images/btn-add-down.png") :
-                            Qul.image("qrc:///images/btn-add-normal.png")
+                            "qrc:///images/btn-add-down.png" :
+                            "qrc:///images/btn-add-normal.png"
 
                     }
                     onClicked: root.oxy++;
@@ -192,8 +193,8 @@ Item {
                     height: 70
                     contentItem: Image {
                         source: btnOxyMinus.pressed ?
-                            Qul.image("qrc:///images/btn-remove-down.png") :
-                            Qul.image("qrc:///images/btn-remove-normal.png")
+                            "qrc:///images/btn-remove-down.png" :
+                            "qrc:///images/btn-remove-normal.png"
 
                     }
                     onClicked: root.oxy--;

@@ -1,12 +1,12 @@
 cmake_minimum_required (VERSION 3.13)
 
-project(thermo VERSION 0.0.1 LANGUAGES C CXX ASM)
+project(respirator VERSION 0.0.1 LANGUAGES C CXX ASM)
 if (NOT TARGET Qul::QuickUltralite)
     find_package(Qul)
 endif()
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-add_executable(respirator)
+qul_add_target(respirator)
 
 qul_add_resource(respirator
     FILES
@@ -54,7 +54,7 @@ qul_target_qml_sources(respirator
     qml/ModesWidget.qml
 )
 
-target_link_libraries (respirator Qul::QuickUltralite Qul::QuickUltraliteControlsTemplates Qul::QuickUltraliteCharts)
+target_link_libraries (respirator PRIVATE Qul::Controls Qul::ControlsTemplates) # Qul::Charts)
 app_target_setup_os(respirator)
-app_target_default_main(respirator Respirator)
+app_target_default_entrypoint(respirator Respirator)
 

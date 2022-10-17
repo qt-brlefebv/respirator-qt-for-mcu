@@ -1,6 +1,6 @@
 import QtQuick
-import QtQuick.Controls.Templates
-
+import QtQuick.Controls
+import QtQuick.Templates
 
 Item {
     id: root
@@ -23,8 +23,8 @@ Item {
             contentItem: Item {
                 Image {
                     source: root.selected === 0 ?
-                        Qul.image("qrc:///images/btn-Modes-on.png") :
-                        Qul.image("qrc:///images/btn-modes-normal.png")
+                        "qrc:///images/btn-Modes-on.png" :
+                        "qrc:///images/btn-modes-normal.png"
                 }
             }
 
@@ -55,8 +55,8 @@ Item {
             contentItem: Item {
                 Image {
                     source: root.selected === 1 ?
-                        Qul.image("qrc:///images/btn-controls-on.png") :
-                        Qul.image("qrc:///images/btn-controls-normal.png")
+                        "qrc:///images/btn-controls-on.png" :
+                        "qrc:///images/btn-controls-normal.png"
                 }
             }
             onClicked: {
@@ -86,8 +86,8 @@ Item {
             contentItem: Item {
                 Image {
                     source: alarmsButton.pressed ?
-                        Qul.image("qrc:///images/btn-Modes-on.png") :
-                        Qul.image("qrc:///images/btn-modes-normal.png")
+                        "qrc:///images/btn-Modes-on.png" :
+                        "qrc:///images/btn-modes-normal.png"
                 }
             }
             onClicked: {

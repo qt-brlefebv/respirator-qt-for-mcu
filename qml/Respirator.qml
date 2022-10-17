@@ -1,5 +1,6 @@
 import QtQuick
-import QtQuick.Controls.Templates
+import QtQuick.Controls
+import QtQuick.Templates
 
 Rectangle {
     color: "black"
